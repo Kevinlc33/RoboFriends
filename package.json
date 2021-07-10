@@ -44,7 +44,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "prepare": "husky install",
+    "precommit": "pretty-quick --staged"
   },
   "eslintConfig": {
     "extends": [
@@ -65,6 +67,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0"
+    "gh-pages": "^1.1.0",
+    "husky": "^7.0.1",
+    "prettier": "2.3.2",
+    "pretty-quick": "^3.1.1"
   }
 }
